@@ -1,4 +1,4 @@
 function HomePage() {
-  return <h1>Carts Page</h1>;
+  return <h1>Welcome to E-Commerce Store</h1>;
 }
 export default HomePage;
