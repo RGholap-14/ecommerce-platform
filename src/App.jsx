@@ -1,15 +1,21 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import HomePage from "./pages/Home";
+import ProductsPage from "./pages/Products";
+import CartPage from "./pages/Cart";
+import ProfilePage from "./pages/Profile";
+import CheckoutPage from "./pages/Checkout";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<h1>HomePage</h1>} />
-        <Route path="/products" element={<h1>ProductsPage</h1>} />
-        <Route path="/cart" element={<h1>CartsPage</h1>} />
-        <Route path="/profile" element={<h1>ProfilePage</h1>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/checkout" element={<CheckoutPage />} /> 
       </Routes>
     </BrowserRouter>
   );

@@ -12,17 +12,17 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #ff9800; /* orange highlight on hover */
+  color: blue; /* orange highlight on hover */
 }
 
 .active-link {
-  color: #ff9800;              /* orange highlight */
+  color: green;              /* orange highlight */
   border-bottom: 2px solid #ff9800;
   font-weight: 600;            /* slightly bolder */
 }
