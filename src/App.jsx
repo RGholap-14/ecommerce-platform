@@ -4,7 +4,8 @@ import HomePage from "./pages/Home";
 import ProductsPage from "./pages/Products";
 import CartPage from "./pages/Cart";
 import ProfilePage from "./pages/Profile";
-import CheckoutPage from "./pages/Checkout";
+import CheckoutForm from "./pages/CheckoutForm";
+import CheckoutPage from "./pages/CheckoutPage";
 import "./App.css";
 
 
@@ -17,7 +18,8 @@ function App() {
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/checkout" element={<CheckoutPage />} /> 
+        <Route path="/checkout" element={<CheckoutForm />} />
+        <Route path="/checkout-success" element={<CheckoutPage />} /> 
       </Routes>
     </BrowserRouter>
   );
