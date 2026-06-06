@@ -8,7 +8,6 @@ function CartPage() {
   const navigate = useNavigate();
 
   const handleCheckout = () => {
-    clearCart();
     navigate("/checkout");
   };
   return (
