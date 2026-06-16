@@ -64,7 +64,7 @@ function CheckoutForm() {
     }
 
     // ✅ 3. Call backend to create payment intent
-    const response = await fetch("http://localhost:5000/create-payment-intent", {
+    const response = await fetch("http://localhost:5000/payment/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount: amountInCents, currency: "usd" })
