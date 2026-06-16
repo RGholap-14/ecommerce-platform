@@ -39,6 +39,9 @@ function Navbar() {
         )}</NavLink></li>
 
         <li><NavLink to="/profile"className={({ isActive }) => isActive ? "active-link" : ""}>Profile</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
+        <li><NavLink to="/signup">Sign Up</NavLink></li>
+        
       </ul>
 
     </nav>
